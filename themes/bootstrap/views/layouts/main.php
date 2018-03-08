@@ -1,29 +1,25 @@
 <html lang="es">
 
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="language" content="es" />
-<meta name="description" content="Centro de capacitacion en lenguajes de programacion, consultoria y desarrollo de software">
-<meta content="" name="author">
-<meta name="keywords"  content="cursos de java, curso java, cursos de flex, curso flex, cursos de base de datos, curso sql, cursos de as3, curso flash, cursos de php, curso php, cursos de jquery, curso jquery" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <meta name="description" content="Centro de capacitacion en lenguajes de programacion, consultoria y desarrollo de software">
+    <meta name="keywords"  content="cursos de java, curso java, cursos de flex, curso flex, cursos de base de datos, curso sql, cursos de as3, curso flash, cursos de php, curso php, cursos de jquery, curso jquery" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles-merged.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
 
-<title><?php echo CHtml::encode($this->pageTitle); ?></title>
-	<?php Yii::app()->bootstrap->register(); ?>
-
-	<link rel="stylesheet" type="text/css"
-	href="<?php echo Yii::app()->baseUrl; ?>/css/carousel.css" />
-
-	
-<meta content="width=device-width, initial-scale=1" name="viewport">
-
-<title><?php echo CHtml::encode($this->pageTitle); ?></title>
-<!--[if IE 8]>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/respond.js"></script>
-<![endif]-->
-</head>
 
 <!-- NAVBAR
 ================================================== -->
@@ -66,7 +62,7 @@
 				
 			
 			<a href="#"  class="navbar-brand">
- 				NUKLEUS
+ 				Tecnogenius
  			</a>	
 			</div>				
 		

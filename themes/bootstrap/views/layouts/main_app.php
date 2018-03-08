@@ -56,7 +56,7 @@
 				
 			
 			<a href="#"  class="navbar-brand">
-				Nukleus
+				Tecnogenius
 			</a>	
 			</div>				
 		
