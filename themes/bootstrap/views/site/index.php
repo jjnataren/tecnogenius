@@ -7,56 +7,9 @@ $this->pageTitle=Yii::app()->name;
 
  <section class="flexslider">
         <ul class="slides">
-          <li style="background-image: url(img/slider_1.jpg)" class="overlay">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <div class="probootstrap-slider-text text-center">
-                    <h1 class="probootstrap-heading probootstrap-animate">Your Bright Future is Our Mission</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li style="background-image: url(img/slider_2.jpg)" class="overlay">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <div class="probootstrap-slider-text text-center">
-                    <h1 class="probootstrap-heading probootstrap-animate">Education is Life</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </li>
-          <li style="background-image: url(img/slider_3.jpg)" class="overlay">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <div class="probootstrap-slider-text text-center">
-                    <h1 class="probootstrap-heading probootstrap-animate">Helping Each of Our Students Fulfill the Potential</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-
-
-
-<div data-ride="carousel" class="carousel slide" id="myCarousel" >
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li class="" data-slide-to="0" data-target="#myCarousel"></li>
-        <li data-slide-to="1" data-target="#myCarousel" class="active"></li>
-        <li data-slide-to="2" data-target="#myCarousel" class=""></li>
-      </ol>
-      <div class="carousel-inner">
-      
-      <?php $items = Carousel::model()->findAllByAttributes(array('STATUS'=>1)); 
+        
+        
+              <?php $items = Carousel::model()->findAllByAttributes(array('STATUS'=>1)); 
       
       	$totalItems = count($items);
       	$contItem = 0;
@@ -79,17 +32,16 @@ $this->pageTitle=Yii::app()->name;
       		
       	}      	
       ?>
+      
 
-        <div class="<?= $activeClass ?>">
-        
-        
-          <img alt="<?=$item->CAPTION ?>" src=<?= isset($item->documents[0]) ? $item->documents[0]->PATH :  'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' ?>>
+          <li style="background-image: url(<?= isset($item->documents[0]) ? $item->documents[0]->PATH :  'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' ?>)" class="overlay">
           <div class="container">
-            <div class="carousel-caption"> 
-              <h1><?=$item->TITLE; ?></h1>
-              <p><?=$item->DESCRIPTION; ?></p>
-              
-              <?php 
+          	<div class="row">
+          		<div class="col-md-8 col-md-offset-2">
+          			<div class="probootstrap-slider-text text-center">
+          				 <h1 class="probootstrap-heading probootstrap-animate"><?=$item->TITLE; ?></h1>
+          				  <p><?=$item->DESCRIPTION; ?></p>
+          				  <?php 
               
               $url = $item->ACTION;
               
@@ -101,12 +53,15 @@ $this->pageTitle=Yii::app()->name;
 						
 						
 			   ?>
-			   <p>
+			  
               <a  href="<?= $url;?>" class="btn btn-lg btn-primary" ><?=$item->ACTION_NAME; ?></a>
-              </p>
-            </div>
+          			</div>
+          		</div>
+          	</div>
+          
+     
           </div>
-        </div>
+        </li>
         
       <?php
       
@@ -116,16 +71,17 @@ $this->pageTitle=Yii::app()->name;
        
       <?php if (!$contItem):?>
       
-      		  <div class="item active">
-          <img class="Nuestra empresa" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Bienvenido</h1>
-              <p>Explore nuestro contenido!</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Buscar</a></p>
+      		<li style="background-image: url(img/slider_1.jpg)" class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="probootstrap-slider-text text-center">
+                    <h1 class="probootstrap-heading probootstrap-animate">Bienvenido a Tecnogenius</h1>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </li>
 		
       
       
@@ -133,12 +89,41 @@ $this->pageTitle=Yii::app()->name;
  
         
         
-      </div>
-      <a data-slide="prev" href="#myCarousel" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a data-slide="next" href="#myCarousel" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-    
-    
+        
+        
+        </ul>
+      </section>
+
+  <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h2>Bienvenido a TECNOGENIUS</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="probootstrap-flex-block">
+                <div class="probootstrap-text probootstrap-animate">
+                  <h3>Acerca de nosotros</h3>
+                  <p>Somos tu mejor opción para aprender nuevas tecnologías, contamos con los mejores profesores certificados.</p>
+                  <p><a href="#" class="btn btn-primary">Conctacto</a></p>
+                </div>
+                <div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
+                  <a href="https://www.youtube.com/watch?v=QK2N2PmZuM0" class="btn-video popup-vimeo"><i class="icon-play3"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 <div class="container marketing">
 
       <h1>Tecnologías que Impartimos</h1>
@@ -214,6 +199,7 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 
     </div>
+ 
     
     
     

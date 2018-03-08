@@ -32,16 +32,12 @@
 <div class="probootstrap-search" id="probootstrap-search">
       <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
       
-      	<?php $form=$this->beginWidget('CActiveForm',array(
-												'id'=>'keyword-form',
-												'enableAjaxValidation'=>false,
-												'method'=>'get',
-												'action'=> Yii::app()->createUrl('site/search'),
-											
-				)); ?>
-				
-						<input type="search" name="s" id="search" placeholder="Buscar...">
-			<?php $this->endWidget(); ?>
+      
+      <form action="<?= Yii::app()->createUrl('site/search');?>" method ="get">
+        <input type="search" name="search_string" id="search" placeholder="Ingrese palabra de busqueda">
+      </form>
+      
+ 
       
     </div>
 
@@ -109,21 +105,54 @@
         </div>
       </nav>
       
-	
-</div>
-
 	<?php echo $content; ?>
 	
 	
-<div id="footer">
-
-		<div class="container" align="center">
-			
-					Copyright &copy; <?php echo date('Y'); ?> Nukleus.<a href="#">
-				Privacy</a>-<a href="#">T&eacute;rminos</a><br /> Algunos derechos reservados. <br />
-				Todas las marcas y logotipos mostradas en este sitio se util&iacute;zan solo con fines informativos y est&aacute;n bajo la licencia de sus respectivos due&ntilde;os.<br />
-				<p class="text text-center">
-				<small>
+  <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Acerca de nosotros</h3>
+                <p>Somos tu mejor opción para aprender nuevas tecnologías, contamos con los mejores profesores certificados.</p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-github"></i></a></li>
+                  <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li class="active"><a
+						href="<?php echo Yii::app()->createUrl('site/index', array())?>">Home</a></li>
+						<li	<?php echo (!strcmp($this->pageTitle,'Nukleus Cursos'))? "class='active'":'' ?>>
+						<a
+						href="<?php echo Yii::app()->createUrl('site/topCourses'); ?>">Cursos</a>
+					</li>
+					
+					<li	<?php echo (!strcmp($this->pageTitle,'Nukleus Tutoriales'))? "class='active'":'' ?>>
+                    	<a href="<?php echo Yii::app()->createUrl('site/topTuto'); ?>">Tutoriales</a>
+                    </li>
+				
+					
+                    
+                    <li><a href="<?php echo Yii::app()->createUrl('site/topMethodology'); ?>">Metodología</a></li>
+                    
+                
+					<li
+						<?php echo (!strcmp($this->pageTitle,'Nukleus - Ubicanos'))? "class='active'":'' ?>>
+						<a
+						href="<?php echo Yii::app()->createUrl('site/contact', array())?>">Ubicanos</a>
+					</li>
+                  
+                  <li>
 				<?php if (Yii::app()->user->isGuest) { ?>
 							
 								<a	href="<?php echo Yii::app()->createUrl(Yii::app()->getModule('user')->loginUrl[0], array());?>"><?php echo "Acceso";//Yii::app()->getModule('user')->t('Login')?>
@@ -140,12 +169,55 @@
 						<?php echo Yii::app()->getModule('user')->t("Logout"); ?> ( <?php echo Yii::app()->user->name; ?>)</a>
 							
 						<?php } ?>
-						</small>
-				</p>		
-						
-		</div>
+						</li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contacto</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>C. Londres #114, Col. Juárez, Del. Cuauhtemoc, CDMX</span></li>
+                  <li><i class="icon-mail"></i><span><?=$adminEmail; ?></span></li>
+                  <li><i class="icon-phone2"></i><span><?=$line; ?></span></li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+          <!-- END row -->
+          
+        </div>
+
+        <div class="probootstrap-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                	Copyright &copy; <?php echo date('Y'); ?> Nukleus.<a href="#">
+				Privacy</a>-<a href="#">T&eacute;rminos</a><br /> Algunos derechos reservados. <br />
+				Todas las marcas y logotipos mostradas en este sitio se utilízan solo con fines informativos y están bajo la licencia de sus respectivos dueños.<br />
+		
+              </div>
+              <div class="col-md-4 probootstrap-back-to-top">
+                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>	
+	
 </div>
+
+	
+	
+	
+
 	<!-- page -->
+
+    <script src="/js/scripts.min.js"></script>
+    <script src="/js/main.min.js"></script>
+    <script src="/js/custom.js"></script>
 
 </body>
 </html>

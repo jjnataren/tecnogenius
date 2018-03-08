@@ -2780,3 +2780,1043 @@ Stack trace:
 REQUEST_URI=/fonts/glyphicons-halflings-regular.ttf
 HTTP_REFERER=http://tecnogenius.local/css/styles-merged.css
 ---
+2018/03/08 04:06:18 [error] [php] Undefined variable: url (C:\Users\CONSULTOR\git\tecnogenius\themes\bootstrap\views\site\index.php:44)
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\Users\CONSULTOR\git\tecnogenius\protected\controllers\SiteController.php(38): SiteController->render()
+#3 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2018/03/08 04:08:16 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:08:28 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:10:10 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:10:11 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:12:13 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:12:14 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:15:12 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:15:13 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:16:32 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:19:31 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:20:00 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:20:06 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:20:14 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:22:00 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:22:13 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:22:23 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:23:20 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:23:20 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:25:05 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:25:06 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:25:15 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:27:22 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:28:30 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:28:54 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:30:28 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:35:08 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:35:39 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "css/bootstrap.min.css.map" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.min.css.map
+---
+2018/03/08 04:38:40 [error] [php] Undefined index: search_string (C:\Users\CONSULTOR\git\tecnogenius\protected\controllers\SiteController.php:346)
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/busqueda?s=java
+2018/03/08 04:46:10 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:48:33 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:50:21 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:50:26 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "nucleus.mp4" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('nucleus.mp4')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nucleus.mp4
+HTTP_REFERER=http://tecnogenius.local/
+---
+2018/03/08 04:50:54 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 04:52:25 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:03:46 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:05:20 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:06:33 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/contacto.html
+---
+2018/03/08 05:06:44 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/cursos/top-cursos.html
+---
+2018/03/08 05:06:47 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/tutoriales/top-tutoriales.html
+---
+2018/03/08 05:06:53 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/cursos/top-cursos.html
+---
+2018/03/08 05:06:56 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/tutoriales/top-tutoriales.html
+---
+2018/03/08 05:06:58 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:07:14 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/cursos/top-cursos.html
+---
+2018/03/08 05:07:18 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:07:20 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/cursos/top-cursos.html
+---
+2018/03/08 05:07:23 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:07:24 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/sticky-footer.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/sticky-footer.css
+HTTP_REFERER=http://tecnogenius.local/cursos/top-cursos.html
+---
+2018/03/08 05:09:30 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:10:14 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:13:23 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:16:03 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
+2018/03/08 05:16:13 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/admin/index
+---
+2018/03/08 05:16:45 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/admin
+---
+2018/03/08 05:17:02 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/create
+---
+2018/03/08 05:17:37 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/admin
+---
+2018/03/08 05:17:40 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/update/id/3
+---
+2018/03/08 05:18:01 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/view/id/3
+---
+2018/03/08 05:19:19 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/manageDocuments/id/3
+---
+2018/03/08 05:19:34 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/create
+---
+2018/03/08 05:20:09 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/view/id/4
+---
+2018/03/08 05:20:12 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "themes/bootstrap/css/styles.css" in C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/bootstra...')
+#1 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/bootstrap/css/styles.css
+HTTP_REFERER=http://tecnogenius.local/carousel/manageDocuments/id/4
+---
+2018/03/08 05:21:46 [error] [php] Methods with the same name as their class will not be constructors in a future version of PHP; idna_convert has a deprecated constructor (C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\idna_convert.php:54)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(6318): class_exists()
+#2 unknown(0): SimplePie_File->__construct()
+#3 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(3283): ReflectionClass->newInstanceArgs()
+#4 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1485): SimplePie_Registry->create()
+#5 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\SimplePie.php(1271): SimplePie->fetch_data()
+#6 C:\Users\CONSULTOR\git\tecnogenius\protected\extensions\yii-feed-widget\YiiFeedWidgetController.php(92): SimplePie->init()
+#7 unknown(0): YiiFeedWidgetController->actionGetFeed()
+#8 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\Users\CONSULTOR\git\tecnogenius\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(133): YiiFeedWidgetController->runAction()
+#12 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CInlineFilter.php(58): YiiFeedWidgetController->filterAccessControl()
+#15 C:\Users\CONSULTOR\git\tecnogenius\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CController.php(265): YiiFeedWidgetController->runActionWithFilters()
+#18 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(282): YiiFeedWidgetController->run()
+#19 C:\Users\CONSULTOR\git\tecnogenius\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\CONSULTOR\git\tecnogenius\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Users\CONSULTOR\git\tecnogenius\index.php(13): CWebApplication->run()
+REQUEST_URI=/YiiFeedWidget/getFeed?url=http%3A%2F%2Fwww.20minutos.com.mx%2Frss%2Ftecnologia%2F&limit=3
