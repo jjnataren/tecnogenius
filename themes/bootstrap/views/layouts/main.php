@@ -1,5 +1,8 @@
 <html lang="es">
-
+<?php 
+			  $adminEmail  =  isset(Yii::app()->params['adminEmail'])?Yii::app()->params['adminEmail']:'' ;
+			  $line   =  isset(Yii::app()->params['line']['main'])?Yii::app()->params['line']['main']:'' ;
+		  ?>
 
 <head>
     <meta charset="utf-8">
@@ -26,51 +29,61 @@
 <body>
 
 
-<nav role="navigation" class="navbar-fixed-top navbar-inverse" >
-<div class="container-fluid">
-<div class="row">
-
-<div id="logo2" class="col-md-6 col-xs-2 col-sm-6" style="background-color: #000000; height: 100px;">
-	<img alt="Nukleus"  class="featurette-image img-responsive" style="height: 100px;  float: right; clear: both;" src=<?php echo Yii::app()->request->baseUrl.'/images/site/nukleus_logo_resp.png'; ?>>
-</div>
-<div id="logo1" class="col-md-6 col-xs-2 col-sm-6" style="background-color: #000000; height: 100px;">
-	<img alt="Nukleus "  class="featurette-image img-responsive" style="height: 100px; float: right; clear: both;" src=<?php echo Yii::app()->request->baseUrl.'/images/site/logo2.png'; ?>>
-</div>
-<div class="col-md-6 col-xs-10 col-sm-6" style="background-color: #000000; height: 100px;">
-	<h3 style="text-align: left; margin-right: 100px;" class="text text-primary">Contacto</h3>
-	
-		  <?php 
-			  $adminEmail  =  isset(Yii::app()->params['adminEmail'])?Yii::app()->params['adminEmail']:'' ;
-			  $line   =  isset(Yii::app()->params['line']['main'])?Yii::app()->params['line']['main']:'' ;
-		  ?>
-	
-			<span class="glyphicon glyphicon-envelope text-primary"></span><strong class="text text-primary">&nbsp;<?= $adminEmail; ?></strong>	
-				<br />	
-			<span class="glyphicon glyphicon-phone-alt text-primary"></span><strong class="text text-primary">&nbsp;<?= $line; ?></strong>	
-</div>
-
-</div>
-</div>
-	<div class="container">
-			<div class="navbar-header">
-				<button data-target=".navbar-collapse" data-toggle="collapse"
-					class="navbar-toggle" type="button">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
+<div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      
+      	<?php $form=$this->beginWidget('CActiveForm',array(
+												'id'=>'keyword-form',
+												'enableAjaxValidation'=>false,
+												'method'=>'get',
+												'action'=> Yii::app()->createUrl('site/search'),
+											
+				)); ?>
 				
-			
-			<a href="#"  class="navbar-brand">
- 				Tecnogenius
- 			</a>	
-			</div>				
-		
-		
-			
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a
+						<input type="search" name="s" id="search" placeholder="Buscar...">
+			<?php $this->endWidget(); ?>
+      
+    </div>
+
+<div class="probootstrap-page-wrapper">
+	<div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>C. Londres #114, Col. Juárez, Del. Cuauhtemoc, CDMX</span>
+              <span><i class="icon-phone2"></i><?=$line;?></span>
+              <span><i class="icon-mail"></i><?=$adminEmail;?></span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" title="ProBootstrap:Enlight">Enlight</a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a
 						href="<?php echo Yii::app()->createUrl('site/index', array())?>">Home</a></li>
 						<li	<?php echo (!strcmp($this->pageTitle,'Nukleus Cursos'))? "class='active'":'' ?>>
 						<a
@@ -91,38 +104,16 @@
 						<a
 						href="<?php echo Yii::app()->createUrl('site/contact', array())?>">Ubicanos</a>
 					</li>
-				</ul>
-
-				
-				<?php $form=$this->beginWidget('CActiveForm',array(
-												'id'=>'keyword-form',
-												'enableAjaxValidation'=>false,
-												'method'=>'get',
-												'action'=> Yii::app()->createUrl('site/search'),
-												'htmlOptions'=>array(
-																				'class'=>'navbar-form navbar-left',
-																	)
-				)); ?>
-				
-						<div class="form-group hidden-sm">
-						<input type="text" class="form-control" placeholder="Busqueda" name="search_string"  role="search">
-						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-					</div>
-			<?php $this->endWidget(); ?>
-				
-
-				
-
-			</div>
-			<!-- /.nav-collapse -->
-		</div>
-		<!-- /.container -->
-	</nav>	
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
 	
-	<div class="row">
+</div>
+
 	<?php echo $content; ?>
 	
-	</div>
 	
 <div id="footer">
 

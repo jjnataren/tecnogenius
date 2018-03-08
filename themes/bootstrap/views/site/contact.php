@@ -32,7 +32,7 @@ $this->breadcrumbs=array(
 <blockquote>	
 	<address>
 	<strong>Distrito Federal</strong><br/>
-		Calle Londres #114. CP.06600, Col. Ju&aacute;rez, Delegaci&oacute;n Cuauhtemoc.
+		Calle Londres #114. CP.06600, Col. Juárez, Delegación Cuauhtemoc.
 	</address>
 </blockquote>
 
