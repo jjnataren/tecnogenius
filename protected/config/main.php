@@ -8,7 +8,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Nukleus',
+	'name'=>'Tecnogenius',
 	'theme'=>'bootstrap',
 	'language'=>'es',
 	// preloading 'log' component
@@ -86,7 +86,7 @@ return array(
 					//'frictionlessRequests'=>true, // JS SDK - enable frictionless requests for request dialogs
 					//'html5'=>true,  // use html5 Social Plugins instead of XFBML
 					'ogTags'=>array(  // set default OG tags
-							'og:title'=>'Nukleus',
+							'og:title'=>'Tecno genius',
 							'og:description'=>'Cursos Java',
 							//'og:image'=>'URL_TO_WEBSITE_LOGO',
 					),
