@@ -1,0 +1,24 @@
+<NS1:HistorialInversionIN xmlns:NS1="http://www.banorte.com/ws/esb/auditoria/Inversion">
+ <FechaOperacion>2014-07-02T17:26:53</FechaOperacion>
+ <FechaEjecuto>2014-07-02T17:26:53</FechaEjecuto>
+ <Contrato>0301985910</Contrato>
+ <CuentaDestino>0301985910</CuentaDestino>
+ <Importe>10000.00</Importe>
+ <Divisa>MXP</Divisa>
+ <Titulos>MXP</Titulos>
+ <Precio>0.00</Precio>
+ <Folio></Folio>
+ <TipoOperacion>I</TipoOperacion>
+ <IdTipoMovimiento>R</IdTipoMovimiento>
+ <FondoEmisora>R</FondoEmisora>
+ <IdCuentaOrigen>0</IdCuentaOrigen>
+ <Estatus>H</Estatus>
+ <MensajeXML><![CDATA[<NS1:inversionesIN xmlns:NS1="http://www.banorte.com/ws/esb/auditoria/inversiones"><IdMov>0</IdMov><STipoOperacion>a</STipoOperacion><SStatus>a</SStatus><IdTipoMovimiento>a</IdTipoMovimiento><IdNumCredito>a</IdNumCredito><IdDivisa>0</IdDivisa><IdDestino></IdDestino><NImporte>0</NImporte><SDescripcion></SDescripcion><SReferencia></SReferencia><DFechaVenc>2001-12-17T09:30:47</DFechaVenc><IPlazo>0</IPlazo><NTasa>0</NTasa><Imposicion>0</Imposicion><IdEmpresa>0</IdEmpresa><IdUsuarioCapturo>0</IdUsuarioCapturo><SUsuarioCapturo></SUsuarioCapturo><DFechaCapturo>2001-12-17T09:30:47</DFechaCapturo><IdUsuarioCoejecuto>0</IdUsuarioCoejecuto><SUsuarioCoejecuto></SUsuarioCoejecuto><DFechaCoejecuto>2001-12-17T09:30:47</DFechaCoejecuto><IdUsuarioEjecuto>0</IdUsuarioEjecuto><SUsuarioEjecuto></SUsuarioEjecuto><DFechaEjecuto>2001-12-17T09:30:47</DFechaEjecuto><SMensajeUsuario></SMensajeUsuario><SNumeroConfirmacion></SNumeroConfirmacion><SFolio></SFolio><NPrecio>0</NPrecio><NImporteAcciones></NImporteAcciones><SFondo></SFondo><DFechaLiquidacion>2001-12-17T09:30:47</DFechaLiquidacion><SCuenta></SCuenta><SAliasOrigen></SAliasOrigen><SAliasDestino></SAliasDestino><IIdCuentaOrigen>0</IIdCuentaOrigen></NS1:inversionesIN>]]></MensajeXML>
+ <IdServicio>441</IdServicio>
+ <IdUsuario/>
+ <IdOperacion>MW121</IdOperacion>
+ <TipoCanal>1</TipoCanal>
+ <IdAplicacion>MW12</IdAplicacion>
+ <CodEmpresa>2</CodEmpresa>
+ <CodCR>1007</CodCR>
+</NS1:HistorialInversionIN>

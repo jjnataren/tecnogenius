@@ -1,0 +1,133 @@
+<?php
+/* @var $this SiteController */
+
+$this->pageTitle=Yii::app()->name;
+?>
+
+<div data-ride="carousel" class="carousel slide" id="myCarousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li class="" data-slide-to="0" data-target="#myCarousel"></li>
+        <li data-slide-to="1" data-target="#myCarousel" class="active"></li>
+        <li data-slide-to="2" data-target="#myCarousel" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item">
+          <img alt="First slide" data-src="holder.js/900x400/auto/#777:#7a7a7a/text:First slide" src=<?php echo Yii::app()->request->baseUrl.'/images/marketing/imagen.jpg'; ?>>
+          <div class="container">
+            <div class="carousel-caption"> 
+              <h1>PROMOCION </h1> 
+             <p> Soporte tecnico. inicios sabatinos 21 de marzo <br>
+                 Cursos linux servidores. inicios vespertinos 28 de marzo <br>
+                 1,1Cursos cableado estructurado. inicios intensivos  2 de abril</p>
+              <p><a role="button" href="#" class="btn btn-lg btn-primary">Inscribirme ahora</a></p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img alt="Second slide" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" >
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Mentoring IT</h1>
+              <p>Somos empresa joven y dinámica que apuesta por la enseñanza de TICS como  <code>JAVA, PHP, .NET, BD </code>.
+La creación de contenidos de calidad como  fundamento nos distingue de los demas. 
+Son muchos ya los clientes satisfechos  y deseamos que el proximo seas tu.</p>
+              <p><a role="button" href=<?php echo Yii::app()->createUrl('site/courseIndex', array('id'=>0))?> class="btn btn-lg btn-primary">Explorar cursos</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img alt="Third slide" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" src=<?php echo Yii::app()->request->baseUrl.'/images/marketing/cursos.jpg'; ?>>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Aprende a Programar .</h1>
+              <p>Nuestra garantía: <br> tu  satisfacción total o la devolución de tu inversión</p>
+              <p><a role="button" href="#" class="btn btn-lg btn-primary">Conocer más</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a data-slide="prev" href="#myCarousel" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a data-slide="next" href="#myCarousel" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    
+<div class="container marketing">
+
+      <h1>Tecnologías que Impartimos</h1>
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img alt="140x140" data-src="holder.js/140x140" class="img-circle" style="width: 140px; height: 140px;" src=<?php echo Yii::app()->request->baseUrl.'/images/tec/java.jpg'; ?> >
+          <h2>JAVA</h2>
+          <p>Java es una tecnología que se usa para el desarrollo de aplicaciones que convierten a la Web en un elemento más interesante y útil. Java no es lo mismo que javascript, que se trata de una tecnología sencilla que se usa para crear páginas web y solamente se ejecuta en el explorador.</p>
+          <p><a role="button" href="#" class="btn btn-default">Aprender mas »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img alt="140x140" data-src="holder.js/140x140" class="img-circle" style="width: 140px; height: 140px;" src=<?php echo Yii::app()->request->baseUrl.'/images/tec/php.jpg'; ?>>
+          <h2>PHP</h2>
+          <p>PHP es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.</p>
+          <p><a role="button" href="#" class="btn btn-default">Aprender mas »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img alt="140x140" data-src="holder.js/140x140" class="img-circle" style="width: 140px; height: 140px;" src=<?php echo Yii::app()->request->baseUrl.'/images/tec/donet.jpg'; ?>>
+          <h2>.NET</h2>
+          <p>.NET Podría considerarse una respuesta de Microsoft al creciente mercado de los negocios en entornos Web, como competencia a la plataforma Java de Oracle Corporation y a los diversos framework de desarrollo web basados en PHP</p>
+          <p><a role="button" href="#" class="btn btn-default">Aprender mas »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <h3>Ultimas noticias</h3>
+      
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Conferencia en FLISOL <span class="text-muted"> ¡fue todo un exito!</span></h2>
+          <p class="lead"> El pasado sábado 26 de abril del 2008 se realizó el Festival Latinoamericano de Instalación de Software Libre, donde la Ciudad de Mérida (Venezuela), no escapó a tan significativo evento, en la sede de la Corporación de Los Andes (CORPOANDES), quien facilitó el patio central y auditorio de sus instalaciones. </p>
+        </div>
+        <div class="col-md-5">
+          <img alt="500x500" data-src="holder.js/500x500/auto" class="featurette-image img-responsive" style="width: 500px; height: 300px;" src=<?php echo Yii::app()->request->baseUrl.'/images/marketing/images.jpg'; ?>>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img alt="500x500" data-src="holder.js/500x500/auto" class="featurette-image img-responsive" style="width: 500px; height: 300px;" src=<?php echo Yii::app()->request->baseUrl.'/images/marketing/facebook.jpg'; ?>>
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Facebook se queda WhatsApp. <span class="text-muted">velo por ti mismo.</span></h2>
+          <p class="lead">Esta adquisición por un precio que rondaría los 19 mil millones de dólares, además de ser la más sonada a nivel tecnológico en lo que llevamos de 2014, representa una de las comprás más relevantes en el mundo de Internet y concede a Facebook un interesante impulso para seguir creciendo en su carrera en busca del liderazgo en el mundo de la tecnología..</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">¿Quieres darle un vistazo al nuevo Twitter? <span class="text-muted">checalo¡</span></h2>
+          <p class="lead">según ha sido dado a conocer Twitter está probando una nueva página de perfil de usuario mucho más visual en un número reducido de usuarios y que supone una clara diferencia con lo ofrecido hasta la fecha.</p>
+        </div>
+        <div class="col-md-5">
+          <img alt="500x500" data-src="holder.js/500x500/auto" class="featurette-image img-responsive" style="width: 500px; height: 300px;" src=<?php echo Yii::app()->request->baseUrl.'/images/marketing/twitter.jpg'; ?>>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. � <a href="#">Privacy</a> � <a href="#">Terms</a></p>
+      </footer>-->
+
+    </div>

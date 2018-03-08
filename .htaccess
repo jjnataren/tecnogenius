@@ -1,0 +1,50 @@
+#RewriteEngine on
+
+#RewriteRule ^home.html index.php?r=site/index
+
+
+#RewriteRule ^cursos.html index.php?r=site/courseIndex&id=0
+#RewriteRule ^cursos/java_desde_cero.html index.php?r=course/detail&id=14 [L,NC]
+
+
+#RewriteRule ^cursos/jasper-report.html index.php?r=course/detail&id=19
+#RewriteRule ^cursos/aplicaciones-java-web.html index.php?r=course/detail&id=20
+
+
+#RewriteRule ^cursos/java-webservices.html index.php?r=course/detail&id=18
+#RewriteRule ^cursos/java-frameworks.html index.php?r=course/detail&id=22
+#RewriteRule ^cursos/spring-web.html index.php?r=course/detail&id=29
+
+
+#RewriteRule ^tutorial/hola-mundo-java.html index.php?r=tutorial/detail&id=24
+#RewriteRule ^tutorial/instalar-java-en-windos.html index.php?r=tutorial/detail&id=27
+#RewriteRule ^tutorial/clase-Object-java.html index.php?r=tutorial/detail&id=28
+#RewriteRule ^tutorial/uso-Iterator-java.html index.php?r=tutorial/detail&id=30
+#RewriteRule ^tutorial/String-inmutable-java.html index.php?r=tutorial/detail&id=33
+#RewriteRule ^tutorial/instalar-maven-windows.html index.php?r=tutorial/detail&id=34
+#RewriteRule ^tutorial/herencia-clases-java.html index.php?r=tutorial/detail&id=35
+#RewriteRule ^tutorial/interfaces-en-java.html index.php?r=tutorial/detail&id=36
+#RewriteRule ^tutorial/polimorfismo-interfaces-java.html index.php?r=tutorial/detail&id=37
+#RewriteRule ^tutorial/partes-maquinavirtual-java.html-java.html index.php?r=tutorial/detail&id=40
+#RewriteRule ^tutorial/poo-en-java.html index.php?r=tutorial/detail&id=41
+#RewriteRule ^tutorial/sentencia-IF-java.html index.php?r=tutorial/detail&id=44
+
+
+#RewriteRule ^tutorial/configurar-tomcat-y-eclipse.html index.php?r=tutorial/detail&id=26
+#RewriteRule ^tutorial/assert-en-java.html index.php?r=tutorial/detail&id=29
+#RewriteRule ^tutorial/arreglos-en-java.html index.php?r=tutorial/detail&id=31
+#RewriteRule ^tutorial/arreglos-bidimensionales-java.html index.php?r=tutorial/detail&id=32
+#RewriteRule ^tutorial/metodos-get-post-javaweb.html index.php?r=tutorial/detail&id=39
+#RewriteRule ^tutorial/metodos-equals-hashcode-java.html index.php?r=tutorial/detail&id=47
+#RewriteRule ^tutorial/protocolo-http-en-java.html index.php?r=tutorial/detail&id=48
+
+
+#RewriteRule ^tutorial/apache-tiles-javaweb.html index.php?r=tutorial/detail&id=49
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php

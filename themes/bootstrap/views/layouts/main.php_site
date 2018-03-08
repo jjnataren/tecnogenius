@@ -1,0 +1,142 @@
+<html lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="language" content="es" />
+<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<?php Yii::app()->bootstrap->register(); ?>
+</head>
+<meta charset="utf-8">
+
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+
+<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+	<div class="container">
+	<div role="navigation" class="navbar navbar-fixed-top navbar-inverse"
+		role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button data-target=".navbar-collapse" data-toggle="collapse"
+					class="navbar-toggle" type="button">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand"><?php echo CHtml::encode($this->pageTitle); ?></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a
+						href=<?php echo Yii::app()->createUrl('site/index', array())?>>Home</a></li>
+                    <li><a
+						href=<?php echo Yii::app()->createUrl('site/courseIndex', array('id' => '0'))?>><strong>Cursos</strong></a></li>
+					
+					<li><a
+						href="#">Metodologia</a></li>
+                    <li><a
+						href="#">Tutoriales</a></li>
+					
+					<li><a
+						href=<?php echo Yii::app()->createUrl('site/contact', array())?>>Contacto</a></li>
+					<li><a
+						href=<?php echo Yii::app()->createUrl('site/findUs', array())?>>Ubicanos</a></li>
+
+				</ul>
+
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">go</button>
+				</form>
+
+				<ul class="nav navbar-nav  navbar-right">
+						<?php if (Yii::app()->user->isGuest) { ?>
+							<li><a
+						href=<?php echo Yii::app()->createUrl('site/login', array())?>>Login</a></li>
+						<?php }else{  ?>
+							<li><a
+						href=<?php echo Yii::app()->createUrl('admin/index', array())?>>admin</a></li>
+					<li><a
+						href=<?php echo Yii::app()->createUrl('site/logout', array())?>>Logout (<?php echo Yii::app()->user->name; ?>)</a></li>
+							
+						<?php } ?>
+						
+							
+							
+						</ul>
+
+			</div>
+			<!-- /.nav-collapse -->
+		</div>
+		<!-- /.container -->
+	</div>
+</div>
+</div>
+	
+	
+	
+	<?php echo $content; ?>
+<div class="row">
+<div class="container">
+<div class="sm-col-6">
+	<!-- Feed widget -->
+<?php 
+$config = array( 
+                  'display' => true, 
+                  'displayName' => 'JAVA WORLD', 
+                  'twitterUser' => 'oracle', 
+                  'twitterActions' => array(
+                                    'reply'=>'reply', 
+                                    'favorite'=>'favorito'
+                  ), 
+                  'tweetsToDisplay' => 3, 
+                  'locales' => array("en_EN.UTF-8", "en_EN"), 
+                  'timeNames' => array(
+                                    'second', 
+                                    'minute', 
+                                    'hour', 
+                                    'day', 
+                                    'week', 
+                                    'month', 
+                                    'year',  
+                                    'decade'
+                  ), 
+                  'minscript' => false, 
+                  'twitterLogo' => 'light', 
+                  'color' => 'black', 
+                  'linkColor' => 'blue', 
+                  'linkHoverColor' => 'red',
+				  'cachetime'=>0,
+                  
+    );
+
+
+$this->widget('application.components.widgets.yRssTwitter_.YRssTwitter', $config)
+?>
+</div>
+</div>
+</div>
+
+<div id="footer">
+
+		<div class="container" align="center">
+			
+					Copyright &copy; <?php echo date('Y'); ?> Pinfo Soft  · <a href="#">
+				Privacy</a> · <a href="#">Terms</a><br /> All Rights Reserved.<br />
+		</div>
+	</div>
+	<!-- page -->
+
+</body>
+</html>
+

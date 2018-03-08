@@ -1,0 +1,19 @@
+body {
+    min-height: 600px;
+    padding-top: 60px;
+}
+
+.infoSlider {
+background: none repeat scroll 0 0 #000000;
+color: #FFFFFF;
+font-size: 12px;
+position: absolute;
+z-index: 1000;
+margin-left: 1px;
+opacity: 0.8;
+filter: alpha(opacity:80);
+width: 260px;
+height: 40px;
+padding: 5px;
+margin-top: -60px;
+}
