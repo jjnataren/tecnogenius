@@ -213,13 +213,15 @@ return array(
 			//administrator email
 			'adminEmail'=>'informes@tecnogenius.mx',
 			//rssfeed url
-			'rssNews'=>'http://www.20minutos.com.mx/rss/tecnologia/',
+			'rssNews'=>'http://expansion.mx/rss/tecnologia',
 			//face book page
 			'fbpage'=>'https://www.facebook.com/Tecnogenius/',
 			//twiter account
 			'twpage'=>'',
 			//phone, could be with an ext 
 			'line'=>array('main'=>'(0155) 55330565',  'office2'=>'(0155) 55330566'),
+	    
+	        'address'=>'C. Londres #114, Col. Juárez, Del. Cuauhtemoc, CDMX',
 			//mobile phone
 			'mobile'=>'(04455) 23589790',
 			//Address
