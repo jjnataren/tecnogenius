@@ -111,8 +111,8 @@
 						'selectOtherMonths' => true,    // can seelect dates in other months
 						'changeYear' => true,           // can change year
 						'changeMonth' => true,          // can change month
-						'yearRange' => '2013:2050',     // range of year
-						'minDate' => '2013-01-01',      // minimum date
+						'yearRange' => '1940:2050',     // range of year
+						'minDate' => '1940-01-01',      // minimum date
 						'maxDate' => '2099-12-31',      // maximum date
 						'showButtonPanel' => true,      // show button panel
 				),
@@ -126,9 +126,8 @@
 </div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'ROLE'); ?>
-		<?php echo $form->textField($model,'ROLE',array('class'=>'form-control', 'size'=>60,'maxlength'=>300, 'placeholder'=>' Lista personal')); ?>
-	    <?php echo $form->error($model,'ROLE',array('class'=>'text-danger')); ?>	
+		<?php echo $form->dropDownListRow($model,'ROLE',array('1'=>'Profesor', '2'=>'Asesor'), array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'ROLE',array('class'=>'text-danger')); ?>	
 			</div>
 			
 			
