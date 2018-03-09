@@ -43,7 +43,7 @@
 
 
 
-<div role="navigation" class="navbar-fixed-top navbar-inverse" >
+<div role="navigation" class="navbar-fixed-top navbar-default" >
 
 		<div class="container">
 			<div class="navbar-header">
