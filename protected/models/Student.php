@@ -72,11 +72,11 @@ class Student extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'EMAIL' => 'Email',
-			'NAME' => 'Name',
-			'PHONE' => 'Phone',
-			'ADDRESS' => 'Address',
-			'STATUS' => 'Status',
+			'EMAIL' => 'Correo',
+			'NAME' => 'Nombre',
+			'PHONE' => 'Teléfono ',
+			'ADDRESS' => 'Dirección',
+			'STATUS' => 'Estatus',
 		);
 	}
 
