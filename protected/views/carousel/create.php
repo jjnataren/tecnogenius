@@ -12,6 +12,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Carousel</h1>
+<h1>Crear Carousel</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

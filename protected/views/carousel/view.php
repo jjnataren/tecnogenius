@@ -17,7 +17,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View carrusel #<?php echo $model->ID; ?></h1>
+<h1>Ver carrusel #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

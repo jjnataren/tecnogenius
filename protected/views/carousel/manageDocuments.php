@@ -108,7 +108,7 @@ $this->menu=array(
             			 <td class="delete">
 					            <button class="btn btn-danger" data-type="<?php echo $document->DEL_TYPE;?>" data-url="<?php echo $document->DEL_URL.'/idDocumentModel/'.$document->ID;?>">
 					                <i class="icon-trash icon-white"></i>
-					                <span>Delete</span>
+					                <span>Eliminar</span>
 					            </button>
 					            <input type="checkbox" name="delete" value="1" />
 					            
